@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>距离和时间计算器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>距离和时间计算器</h1>
+
+        <div class="input-section">
+            <div class="form-group">
+                <label for="start-location">起始地点:</label>
+                <input type="text" id="start-location" placeholder="例如: 北京市天安门">
+            </div>
+
+            <div id="destination-inputs">
+                <div class="form-group destination-group">
+                    <label for="destination-1">目标地点 1:</label>
+                    <input type="text" id="destination-1" class="destination" placeholder="例如: 上海市东方明珠">
+                </div>
+            </div>
+            <button id="add-destination-btn">添加更多目的地</button>
+        </div>
+
+        <button id="calculate-btn">计算距离和时间</button>
+
+        <div id="map-placeholder">
+            <p>地图将在此处显示 (功能开发中)</p>
+        </div>
+
+        <div id="results-list">
+            <h2>结果:</h2>
+            <ul>
+                <!-- 结果将在此处动态添加 -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
